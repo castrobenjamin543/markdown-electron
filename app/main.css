@@ -1,0 +1,45 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, input, textarea {
+    font: menu;
+}
+
+textarea, input, div, button {
+    outline: none;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    height: 100vh;
+}
+
+.raw-markdown, .rendered-html {
+    min-height: 100%;
+    max-width: 50%;
+    flex-grow: 1;
+    overflow: scroll;
+    font-size: 16px;
+}
+
+.raw-markdown {
+    border: 5px solid rgb(238, 252, 250);
+    background-color: rgb(238, 252, 250);
+    font-family: monospace;
+}
+
+
